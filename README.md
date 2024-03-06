@@ -22,7 +22,6 @@ Engine • revision 0545f8705d
 Tools • Dart 3.1.5 • DevTools 2.25.0
 ```
 3. Android Studio (>= Hedgehog) / IntelliJ Idea Ultimate
-
 ## Repository Structure
     picspile
         assets
