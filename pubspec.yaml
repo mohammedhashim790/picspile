@@ -79,17 +79,21 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf
+        - asset: assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf
+        - asset: assets/fonts/montserrat/static/Montserrat-Bold.ttf
+        - asset: assets/fonts/montserrat/static/Montserrat-SemiBold.ttf
+        - asset: assets/fonts/montserrat/static/Montserrat-ExtraBold.ttf
+        - asset: assets/fonts/montserrat/static/Montserrat-Light.ttf
+        - asset: assets/fonts/montserrat/static/Montserrat-Medium.ttf
+        - asset: assets/fonts/montserrat/static/Montserrat-Regular.ttf
+        - asset: assets/fonts/montserrat/static/Montserrat-SemiBold.ttf
+        - asset: assets/fonts/montserrat/static/Montserrat-Thin.ttf
+        - asset: assets/fonts/montserrat/static/Montserrat-ExtraLight.ttf
+        - asset: assets/fonts/montserrat/static/Montserrat-Black.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
