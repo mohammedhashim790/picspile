@@ -31,6 +31,10 @@ Tools • Dart 3.1.5 • DevTools 2.25.0
             Views/ (Only UI)
             main.dart (Entry Point)
         pubspec.yaml
-        
 
+
+## Pre-Requisites
+1. Android Studio
+   1. Settings -> plugins -> Marketplace -> install flutter plugin
+      ![plugin](assets/plugin.png)
 
