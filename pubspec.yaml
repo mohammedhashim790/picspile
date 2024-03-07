@@ -38,6 +38,7 @@ dependencies:
   flutter_screenutil: ^5.9.0
   staggered_grid_view_flutter: ^0.0.4
   uuid: ^4.2.2
+  phosphor_flutter: ^2.0.1
 
 dev_dependencies:
   flutter_test:
