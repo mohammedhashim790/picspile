@@ -8,10 +8,12 @@ class User {
   String? bio;
   String? password;
   String profile;
+  String username;
 
   User(
       {required this.name,
       required this.profile,
+      required this.username,
       required this.emailAddress,
       this.bio,
       this.designation
