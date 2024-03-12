@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
-
 class Heart extends StatefulWidget {
-
   final bool repaintWithRed;
-  Heart({super.key,this.repaintWithRed = false});
+  Heart({super.key, this.repaintWithRed = false});
 
   @override
   State<Heart> createState() => _HeartState();
@@ -15,22 +13,19 @@ class _HeartState extends State<Heart> {
   Widget build(BuildContext context) {
     return CustomPaint(
       painter: HeartPainter(
-        backgroundColor: (widget.repaintWithRed?Colors.red:Colors.white)
-      ),
+          backgroundColor: (widget.repaintWithRed ? Colors.red : Colors.white)),
     );
   }
 }
 
-
 class HeartPainter extends CustomPainter {
-
   final Color backgroundColor;
   final Color strokeColor;
-  HeartPainter({this.backgroundColor = Colors.white,this.strokeColor = Colors.black});
+  HeartPainter(
+      {this.backgroundColor = Colors.white, this.strokeColor = Colors.black});
 
   @override
   void paint(Canvas canvas, Size size) {
-    // TODO: implement paint
     Paint painter = Paint();
     painter
       ..color = strokeColor
@@ -63,5 +58,4 @@ class HeartPainter extends CustomPainter {
   bool shouldRepaint(CustomPainter oldDelegate) {
     return true;
   }
-
 }

@@ -4,8 +4,7 @@ import 'package:picspile/Services/FeedService/FeedService.dart';
 import 'package:picspile/Views/Explore/ExploreScreen.dart';
 import 'package:picspile/Views/HomeScreen/Feedcard/FeedCard.dart';
 import 'package:picspile/Views/HomeScreen/Story/StoryList.dart';
-import 'package:picspile/Views/SignIn/SignIn.dart';
-import 'package:picspile/Views/SignUp/ChooseUsername.dart';
+import 'package:picspile/Views/Misc/extensions.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -18,32 +17,22 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.transparent,
         leading: const Icon(Icons.circle_outlined),
-        actions: [
-          Icon(PhosphorIcons.messengerLogo())
-        ],
+        actions: [Icon(PhosphorIcons.messengerLogo())],
       ),
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.only(top: 10.0),
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                const StoryList(),
-                ...feeds.map((item)=> FeedCard(feed: item)).toList()
-              ],
-            ),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const StoryList(),
+              ...feeds.map((item) => FeedCard(feed: item)).toList()
+            ],
           ),
         ),
-      ),
-
-      floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          Navigator.of(context).push(MaterialPageRoute(builder: (_)=>ExploreScreen()));
-        },
       ),
     );
   }

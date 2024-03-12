@@ -23,7 +23,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
@@ -34,8 +34,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
               filled: true,
               enabledBorder: OutlineInputBorder(
                   borderSide: const BorderSide(color: Colors.white),
-                  borderRadius: BorderRadius.circular(36.0)
-              ),
+                  borderRadius: BorderRadius.circular(36.0)),
               suffixIcon: const Icon(Icons.search)),
         ),
       ),
