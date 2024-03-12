@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:picspile/Views/Explore/ExploreScreen.dart';
 
 import 'package:picspile/Views/HomeScreen/HomeScreen.dart';
 import 'package:picspile/Views/Profile/profile.dart';
@@ -20,10 +21,15 @@ class _PageNavigationClassState extends State<PageNavigationClass> {
   @override
   Widget build(BuildContext context) {
     final List<Widget> widgetOptions = [
+      //home screen
       const HomeScreen(),
-      const Text('Search Page'),
-      const Text('Search Page'),
-      const Text('Likes'),
+      //explore screen
+      const ExploreScreen(),
+      //!add post screen - TBD
+      const Text('Add post - TBD'),
+      //!likes screen - TBD
+      const Text('Likes - TBD'),
+      //profilescreen
       const Profile(),
     ];
     return Container(
