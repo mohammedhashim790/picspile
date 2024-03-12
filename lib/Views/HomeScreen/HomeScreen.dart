@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:picspile/Services/FeedService/FeedService.dart';
+import 'package:picspile/Views/Explore/ExploreScreen.dart';
 import 'package:picspile/Views/HomeScreen/Feedcard/FeedCard.dart';
 import 'package:picspile/Views/HomeScreen/Story/StoryList.dart';
 import 'package:picspile/Views/SignIn/SignIn.dart';
@@ -41,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-          Navigator.of(context).push(MaterialPageRoute(builder: (_)=>SignInPage()));
+          Navigator.of(context).push(MaterialPageRoute(builder: (_)=>ExploreScreen()));
         },
       ),
     );
